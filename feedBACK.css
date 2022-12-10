@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+header {
+    background-color: #009dfe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.logoimg {
+    width: 20%;
+    margin: 15px;
+}
+
+.menu {
+    width: calc(100% - 4em);
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em;
+}
+
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    height: 2em;
+    display: none;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background-color: black;
+}
+
+main {
+    background-color: white;
+    margin: 0;
+    padding: 5% 10%;
+    background-image: url(images/сапсан.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    padding-bottom: 35px;
+}
+
+.feedback {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    border: 5px #009dfe solid;
+    border-radius: 15px;
+    background-color: #089a35;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.user input {
+    padding: 5px;
+    border: 3px solid #009dfe;
+    border-radius: 10px;
+    width: 100%;
+    color: black;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.user input:focus,
+.user input:active {
+    outline: none;
+    border: 1px solid white;
+}
+
+.adres {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.date {
+    border: 3px solid #009dfe;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.svias {
+    list-style: none;
+}
+
+.obr {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border: 3px solid #009dfe;
+    border-radius: 10px;
+}
+
+button {
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 20%;
+    background-color: #009dfe;
+    color: white;
+    padding: 15px;
+}
+
+footer {
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background-color: aliceblue;
+        transform: translateX(-100%);
+        padding-top: 810px;
+        z-index: 1;
+    }
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+    }
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .logoimg {
+        width: 15%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .feedback {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+    .user {
+        justify-content: center;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .footerIcon {
+        width: 40%;
+    }
+
+    .title {
+        display: none;
+    }
+}

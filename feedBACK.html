@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>«САПСАН» обратная связь</title>
+        <link rel="stylesheet" href="feedBACK.css" />
+        <script src="anime.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.jpg" class="logoimg" />
+                <h1>ФСКЕ «САПСАН»</h1>
+            </div>
+            <div class="menu">
+                <a href="index.html" class="menu_item">Главная</a>
+                <a href="progres.html"  class="menu_item">Достижения</a>
+                <a href="contact.html" class="menu_item">Контакты</a>
+            </div>
+            <div class="menu_small_icon">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+            </div>
+            <div class="menu-small">
+                <a href="index.html" class="menu_small_item">Главная</a>
+                <a href="progres.html" class="menu_small_item">Достижения</a>
+                <a href="contact.html" class="menu_small_item">Контакты</a>
+            </div>
+        </header>
+        <main>
+            <div class="feedback">
+                <h2>Заполните форму обратной связи</h2>
+                <form class="form">
+                    <div class="user">
+                        <ul class="userinfo">
+                            <li class="userinfo_item">
+                                <label for="name">ФИО</label>
+                                <input type="text" id="name" placeholder="Введите ваше ФИО">
+                            </li>
+                             <li class="userinfo_item">
+                                <label for="Email">E-mail</label>
+                                <input type="text" id="Email" placeholder="Введите ваш E-mail">
+                            </li>
+                             <li class="userinfo_item">
+                                <label for="phone">Ваш номер телефона</label>
+                                <input type="text" id="phone" placeholder="Введите ваш телефон">
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="adres">
+                        <li class="userinfo_item">
+                            <label for="adres">Когда с вами связаться?</label>
+                            <input class="date" type="date" id="adres" >
+                        </li>
+                    </ul>
+                    <div class="comunication">
+                        <h3>Укажите удобный способ связи</h3>
+                        <ul class="svias">
+                            <li class="userinfo_item">
+                                <label for="svias1">Телефон</label>
+                                <input type="checkbox" id="svias1">
+                            </li>
+                            <li class="userinfo_item">
+                                <label for="svias2">E-mail</label>
+                                <input type="checkbox" id="svias2">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="obr">
+                        <label for="coment">Оставьте свое обращение</label>
+                        <textarea name="" id="coment" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+                    </div>
+                    <button>
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p class="footerP">ФСКЕ «САПСАН» @2022 Все права защищены</p>
+            <div class="icon">
+                <a href="https://vk.com/sapsan702">
+                    <img class="footerIcon" src="images/logoVK.png" alt="vk" />
+                </a>
+                <a href="https://instagram.com/sapsan_rb?utm_medium=copy_link">
+                    <img
+                        class="footerIcon"
+                        src="images/logoInst.png"
+                        alt="Instagram"
+                    />
+                </a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

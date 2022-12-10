@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+/*****************************************************шапка*********************************************************/
+
+header {
+    background-color: #009dfe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.logoimg {
+    width: 20%;
+    margin: 15px;
+}
+
+.menu {
+    width: calc(100% - 4em);
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em;
+}
+
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    height: 2em;
+    display: none;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background-color: black;
+}
+
+/********************************************************карусель***************************************************/
+
+.slick-slider {
+    display: flex !important;
+    align-items: center;
+}
+
+.carousel__item {
+    display: flex !important;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.image:hover {
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
+.Arrow {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel {
+    background-color: #089a35;
+}
+
+/*******************************************************Тренер*******************************************************/
+
+.coach {
+    display: flex;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.coach_image {
+    background-image: url(images/тренер1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30%;
+    margin-left: 30px;
+}
+
+.coach_trener {
+    display: none;
+}
+
+.coach_text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coach_textH1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.coach_text1 {
+    font-size: 20px;
+    margin: 30px;
+    text-align: justify;
+}
+
+/*********************************************************О Клубе*********************************************************/
+
+.we {
+    display: flex;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    flex-direction: row-reverse;
+    background-color: #009dfe;
+}
+
+.we_image {
+    background-image: url(images/сапсан.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.we_text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.we_textH1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.we_text1 {
+    font-size: 20px;
+    margin: 30px;
+    text-align: justify;
+}
+
+/*******************************************************Подвал****************************************************************/
+
+footer {
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+/**********************************************************Адаптив для телефона**************************************************/
+
+@media (max-width: 650px) {
+    /*Шапка*/
+
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background-color: aliceblue;
+        transform: translateX(-100%);
+        padding-top: 800px;
+        z-index: 1;
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .logoimg {
+        width: 15%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .title {
+        display: none;
+    }
+
+    /*Тренер*/
+
+    .coach {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 34px;
+    }
+
+    .coach_image {
+        display: none;
+    }
+
+    .coach_trener {
+        width: 100%;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .coach_trener_img {
+        width: 100%;
+    }
+
+    .coach_text {
+        width: 100%;
+    }
+
+    .coach_textH1 {
+        font-size: 25px;
+    }
+
+    .coach_text1 {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    /*О клубе*/
+
+    .we {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 34px;
+    }
+
+    .we_textH1 {
+        font-size: 25px;
+    }
+
+    .we_text {
+        width: 100%;
+    }
+
+    .we_image {
+        display: none;
+    }
+
+    .we_image.Phone {
+        width: 100%;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .we_img.Phone {
+        width: 100%;
+    }
+
+    /*Подвал*/
+
+    footer {
+        font-size: 12px;
+    }
+
+    .footerIcon {
+        width: 40%;
+    }
+}
